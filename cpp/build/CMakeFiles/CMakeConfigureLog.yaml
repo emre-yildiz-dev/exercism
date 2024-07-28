@@ -1,0 +1,755 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Darwin - 23.5.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /Users/emreyildiz/Exercism/cpp/build/CMakeFiles/3.29.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/emreyildiz/Exercism/cpp/build/CMakeFiles/3.29.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3"
+      binary: "/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3'
+        
+        Run Build Command(s): /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E env VERBOSE=1 /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make -f Makefile cmTC_5a58d/fast
+        /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_5a58d.dir/build.make CMakeFiles/cmTC_5a58d.dir/build
+        make[1]: Entering directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3'
+        Building C object CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o
+        /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.0 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3 -nostdsysteminc -resource-dir /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -idirafter /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include -isysroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdebug-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3 -ferror-limit 19 -fzero-call-used-regs=used-gpr -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -x c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.5.0
+        ignoring duplicate directory "/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include"
+        ignoring duplicate directory "/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include"
+        ignoring duplicate directory "/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include"
+        ignoring duplicate directory "/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include"
+        ignoring duplicate directory "/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include"
+        ignoring duplicate directory "/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include"
+        ignoring duplicate directory "/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include"
+        ignoring duplicate directory "/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include
+         /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include
+         /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include
+         /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include
+         /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include
+         /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include
+         /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include
+         /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include
+         /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include
+         /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include
+         /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)
+         /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include
+         /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include
+        End of search list.
+        Linking C executable cmTC_5a58d
+        /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a58d.dir/link.txt --verbose=1
+        /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -o cmTC_5a58d
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin
+         "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 11.0 -syslibroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -o cmTC_5a58d -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib -L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -arch arm64 -lSystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        @(#)PROGRAM:ld  PROJECT:ld64-609
+        BUILD 00:00:00 Jan  1 1980
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+        	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+        	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+        	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+        	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+        	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+        	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+        	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+        	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+        	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+        	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+        	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+        	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+        	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+        	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+        	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+        	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+        	/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib
+        	/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        Framework search paths:
+        	/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        make[1]: Leaving directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+          add: [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+          add: [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+          add: [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+          add: [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+          add: [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+          add: [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+          add: [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+          add: [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+          add: [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+          add: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+          add: [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        end of search list found
+        collapse include dir [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include] ==> [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+        collapse include dir [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include] ==> [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+        collapse include dir [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include] ==> [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+        collapse include dir [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include] ==> [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+        collapse include dir [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include] ==> [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+        collapse include dir [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include] ==> [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+        collapse include dir [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include] ==> [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+        collapse include dir [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include] ==> [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+        collapse include dir [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include] ==> [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+        collapse include dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+        collapse include dir [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include] ==> [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+        collapse include dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        implicit include dirs: [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include;/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include;/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include;/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include;/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include;/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include;/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include;/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include;/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include;/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E env VERBOSE=1 /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make -f Makefile cmTC_5a58d/fast]
+        ignore line: [/nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_5a58d.dir/build.make CMakeFiles/cmTC_5a58d.dir/build]
+        ignore line: [make[1]: Entering directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3']
+        ignore line: [Building C object CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.0 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3 -nostdsysteminc -resource-dir /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -idirafter /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include -isysroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdebug-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-agMlO3 -ferror-limit 19 -fzero-call-used-regs=used-gpr -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -x c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.5.0]
+        ignore line: [ignoring duplicate directory "/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+        ignore line: [ /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+        ignore line: [ /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+        ignore line: [ /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+        ignore line: [ /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+        ignore line: [ /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+        ignore line: [ /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+        ignore line: [ /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+        ignore line: [ /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+        ignore line: [ /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+        ignore line: [ /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)]
+        ignore line: [ /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+        ignore line: [ /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_5a58d]
+        ignore line: [/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a58d.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -o cmTC_5a58d]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin]
+        link line: [ "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 11.0 -syslibroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -o cmTC_5a58d -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib -L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o -arch arm64 -lSystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+          arg [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [11.0.0] ==> ignore
+          arg [11.0] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5a58d] ==> ignore
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+          arg [-L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+          arg [-L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+          arg [-L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+          arg [-L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+          arg [-L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+          arg [-L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+          arg [-L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+          arg [-L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+          arg [-L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+          arg [-L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+          arg [-L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+          arg [-L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+          arg [-L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+          arg [-L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+          arg [-L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+          arg [-L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5a58d.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a] ==> lib [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+          arg [-F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+        linker tool for 'C': /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld
+        Library search paths: [;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib;/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        Framework search paths: [;/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        remove lib [System]
+        remove lib [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse framework dir [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib;/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        implicit fwks: [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" "-v"
+      @(#)PROGRAM:ld  PROJECT:ld64-609
+      BUILD 00:00:00 Jan  1 1980
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+      Library search paths:
+      	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+      	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+      	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+      	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+      	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+      	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+      	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+      	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+      	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+      	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+      	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+      	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+      	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+      	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+      	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+      	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+      	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+      	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+      	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+      	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+      	/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib
+      Framework search paths:
+      ld: no object files specified
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J"
+      binary: "/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J'
+        
+        Run Build Command(s): /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E env VERBOSE=1 /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make -f Makefile cmTC_afe7a/fast
+        /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_afe7a.dir/build.make CMakeFiles/cmTC_afe7a.dir/build
+        make[1]: Entering directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J'
+        Building CXX object CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o
+        /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.0 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J -nostdsysteminc -resource-dir /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -idirafter /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include -isysroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1 -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdeprecated-macro -fdebug-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J -ferror-limit 19 -fzero-call-used-regs=used-gpr -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.5.0
+        ignoring duplicate directory "/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include"
+        ignoring duplicate directory "/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include"
+        ignoring duplicate directory "/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include"
+        ignoring duplicate directory "/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include"
+        ignoring duplicate directory "/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include"
+        ignoring duplicate directory "/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include"
+        ignoring duplicate directory "/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include"
+        ignoring duplicate directory "/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include"
+        ignoring duplicate directory "/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include"
+        ignoring duplicate directory "/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include
+         /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include
+         /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include
+         /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include
+         /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include
+         /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include
+         /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include
+         /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include
+         /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include
+         /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include
+         /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1
+         /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)
+         /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include
+         /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include
+        End of search list.
+        Linking CXX executable cmTC_afe7a
+        /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe7a.dir/link.txt --verbose=1
+        /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_afe7a
+        clang version 16.0.6
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin
+         "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 11.0 -syslibroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -o cmTC_afe7a -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib -L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -arch arm64 -lc++ -lSystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        @(#)PROGRAM:ld  PROJECT:ld64-609
+        BUILD 00:00:00 Jan  1 1980
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+        	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+        	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+        	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+        	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+        	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+        	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+        	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+        	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+        	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+        	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+        	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+        	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+        	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+        	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+        	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+        	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+        	/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib
+        	/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib
+        	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+        Framework search paths:
+        	/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        	/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks
+        make[1]: Leaving directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+          add: [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+          add: [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+          add: [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+          add: [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+          add: [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+          add: [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+          add: [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+          add: [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+          add: [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+          add: [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1]
+          add: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+          add: [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        end of search list found
+        collapse include dir [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include] ==> [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+        collapse include dir [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include] ==> [/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+        collapse include dir [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include] ==> [/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+        collapse include dir [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include] ==> [/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+        collapse include dir [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include] ==> [/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+        collapse include dir [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include] ==> [/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+        collapse include dir [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include] ==> [/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+        collapse include dir [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include] ==> [/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+        collapse include dir [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include] ==> [/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+        collapse include dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+        collapse include dir [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1] ==> [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1]
+        collapse include dir [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include] ==> [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+        collapse include dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        implicit include dirs: [/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include;/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include;/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include;/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include;/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include;/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include;/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include;/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include;/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include;/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1;/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E env VERBOSE=1 /nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make -f Makefile cmTC_afe7a/fast]
+        ignore line: [/nix/store/c4301v1sjrp1779626h44pl91jbnpn5r-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_afe7a.dir/build.make CMakeFiles/cmTC_afe7a.dir/build]
+        ignore line: [make[1]: Entering directory '/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J']
+        ignore line: [Building CXX object CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin/clang-16" -cc1 -triple arm64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.0 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 609 -v -fcoverage-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J -nostdsysteminc -resource-dir /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root -dependency-file CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -idirafter /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include -isysroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include -isystem /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include -isystem /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include -isystem /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include -isystem /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include -isystem /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include -isystem /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include -isystem /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include -isystem /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include -iframework /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -isystem /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include -isystem /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1 -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -internal-isystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include -source-date-epoch 315532800 -O2 -Wformat -Wformat-security -Werror=format-security -fdeprecated-macro -fdebug-compilation-dir=/Users/emreyildiz/Exercism/cpp/build/CMakeFiles/CMakeScratch/TryCompile-O9fC2J -ferror-limit 19 -fzero-call-used-regs=used-gpr -fwrapv -stack-protector 2 -stack-protector-buffer-size 4 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target aarch64-apple-darwin23.5.0]
+        ignore line: [ignoring duplicate directory "/nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include]
+        ignore line: [ /nix/store/pcxbfrc8k0s9h1rxmg1n0384hdba8jc3-compiler-rt-libc-16.0.6-dev/include]
+        ignore line: [ /nix/store/hqpmw3mqsr94x8qbyy4a3kmnswznxpv0-boost-1.81.0-dev/include]
+        ignore line: [ /nix/store/g5ivgdj81x3vylp9r4bki9mdkf53908d-poco-1.13.3-dev/include]
+        ignore line: [ /nix/store/s84a7qdqkl8qhzg38n7vscygkzsmcvd4-zlib-1.3.1-dev/include]
+        ignore line: [ /nix/store/5p4nrxzd5lkma4bm5x8zkqk046qlzpx2-pcre2-10.44-dev/include]
+        ignore line: [ /nix/store/062496ang7fqfs6ib7wk43ymgi8a5rba-expat-2.6.2-dev/include]
+        ignore line: [ /nix/store/psh6876srkw5jsj4aq25hk9c1xfm9zkl-sqlite-3.45.3-dev/include]
+        ignore line: [ /nix/store/7fwcz4y37jj6ms17yj9hwqbmhzjaxhj9-openssl-3.0.14-dev/include]
+        ignore line: [ /nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/include]
+        ignore line: [ /nix/store/8ndzc47v53lrb6fgs3npib32pn8lgkh1-libcxx-16.0.6-dev/include/c++/v1]
+        ignore line: [ /nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks (framework directory)]
+        ignore line: [ /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/include]
+        ignore line: [ /nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_afe7a]
+        ignore line: [/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe7a.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=11.0 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_afe7a]
+        ignore line: [clang version 16.0.6]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /nix/store/vyvqd807xcvljycncgpnzscgwspifm74-clang-16.0.6/bin]
+        link line: [ "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" -demangle -lto_library /nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.0.0 11.0 -syslibroot /nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk -o cmTC_afe7a -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib -L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib -L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib -L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib -L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib -L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib -L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib -L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib -L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib -L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib -L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib -L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o -arch arm64 -lc++ -lSystem /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks -F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+          arg [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/nix/store/wfgygs953icj85qvkgqy54gkcgkwzxfs-llvm-16.0.6-lib/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [11.0.0] ==> ignore
+          arg [11.0] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/nix/store/gwkch2vkywxcdxy4wjvim78ffcrh7zfy-sdkroot-11.0/MacOSX11.0.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_afe7a] ==> ignore
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+          arg [-L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+          arg [-L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+          arg [-L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+          arg [-L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+          arg [-L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+          arg [-L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+          arg [-L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-L/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+          arg [-L/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+          arg [-L/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+          arg [-L/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+          arg [-L/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+          arg [-L/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+          arg [-L/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+          arg [-L/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+          arg [-L/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+          arg [-L/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+          arg [-L/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+          arg [-L/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_afe7a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a] ==> lib [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+          arg [-F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+          arg [-F/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> ignore
+        linker tool for 'CXX': /nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld
+        Library search paths: [;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib;/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib;/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        Framework search paths: [;/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks;/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        remove lib [System]
+        remove lib [/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/resource-root/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse library dir [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib] ==> [/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib]
+        collapse library dir [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib] ==> [/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib]
+        collapse library dir [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib] ==> [/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib]
+        collapse library dir [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib] ==> [/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib]
+        collapse library dir [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib] ==> [/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib]
+        collapse library dir [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib] ==> [/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib]
+        collapse library dir [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib] ==> [/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib]
+        collapse library dir [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib] ==> [/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib]
+        collapse library dir [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib] ==> [/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib]
+        collapse library dir [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib] ==> [/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib]
+        collapse library dir [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib] ==> [/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        collapse library dir [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib] ==> [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib]
+        collapse framework dir [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        collapse framework dir [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks] ==> [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib;/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib;/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib;/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib;/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib;/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib;/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib;/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib;/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib;/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib;/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib;/nix/store/6llwqpp51hybwkby2hzh727dva2kb4qg-clang-16.0.6-lib/lib]
+        implicit fwks: [/nix/store/04w1mgkhawycg64s4q3n8mkcvma5ppx0-apple-framework-CoreFoundation-11.0.0/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/nix/store/wkpac975pr7mad7mnbjf3dhdf4v6ildv-cmake-3.29.6/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "/nix/store/k8mrxviw965lv59hqbln3297jwfffm2w-clang-wrapper-16.0.6/bin/ld" "-v"
+      @(#)PROGRAM:ld  PROJECT:ld64-609
+      BUILD 00:00:00 Jan  1 1980
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+      Library search paths:
+      	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+      	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+      	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+      	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+      	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+      	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+      	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+      	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+      	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+      	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+      	/nix/store/6x8f9c0qk65l0wjmyj683ylyh63fjl27-libcxx-16.0.6/lib
+      	/nix/store/s39ipwn3nmkpqvh5q0glk6rbrf35b48b-compiler-rt-libc-16.0.6/lib
+      	/nix/store/hsglyn368x5fq8r68gc5p27r0g0i3g1v-boost-1.81.0/lib
+      	/nix/store/hsmjhairh26xg6lwz9iv9h2wwr8wd3dv-zlib-1.3.1/lib
+      	/nix/store/a44z271d5ljr60xl66zfrp19bc0hxy5m-pcre2-10.44/lib
+      	/nix/store/qvmllmjc7fi6jyipn59jk1caym1b5har-expat-2.6.2/lib
+      	/nix/store/ahaj4wmjliwwcc98vfhz7zhg0z79qq18-sqlite-3.45.3/lib
+      	/nix/store/v8asmv9z7diqqfj8x8qcja73bqyklvaj-openssl-3.0.14/lib
+      	/nix/store/z7v7ww053msir8rcdf8apfh84aqx49pb-poco-1.13.3/lib
+      	/nix/store/lybzq28v1ay0zac24hp0pw38s76ijvsj-libobjc-11.0.0/lib
+      	/nix/store/na9g3654cpwgsbivqcssqy225x3kafsn-libSystem-11.0.0/lib
+      Framework search paths:
+      ld: no object files specified
+...
